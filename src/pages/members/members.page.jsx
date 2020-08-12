@@ -2,11 +2,17 @@ import React from "react"
 
 import ContentWrapper from "../../components/content-wrapper"
 import SmallHeading from "../../components/small-heading"
+import NewMemberForm from "./components/new-member"
 
 const MembersPage = () => {
   return (
     <ContentWrapper>
       <SmallHeading>Members</SmallHeading>
+
+      <div className="my-3">
+        <NewMemberForm />
+      </div>
+
       <div className="mt-4">
         <div className="bg-white flex items-center rounded-lg border-2 p-3">
           <div className="rounded-full flex justify-around items-center bg-indigo-200 text-indigo-900 w-10 h-10">
